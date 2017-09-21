@@ -32,7 +32,7 @@ public class DatabaseEngine {
 			isr = new InputStreamReader(
                     this.getClass().getResourceAsStream(FILENAME));
 			br = new BufferedReader(isr);
-			String sCurrentLine;
+			String sCurrentLine = "";
 			
 			while (result != null || (sCurrentLine = br.readLine()) != null) {
 				String[] parts = sCurrentLine.split(":");
