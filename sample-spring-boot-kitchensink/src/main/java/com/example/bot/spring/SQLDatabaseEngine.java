@@ -14,7 +14,7 @@ public class SQLDatabaseEngine extends DatabaseEngine {
 	@Override
 	String search(String text) throws Exception {
 		//Write your code here
-		String answer = null;
+		String answer = text;
 		try {
 			Connection connection = getConnection();
 			PreparedStatement stmt = connection.prepareStatement("SELECT keyword, response FROM lab3 where keyword like concat('%', ?, '%')");
